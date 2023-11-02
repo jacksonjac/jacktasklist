@@ -1,0 +1,23 @@
+<table class="table ">
+    <thead>
+        
+        <tr style="font-family:'Oswald', sans-serif;" *ngIf="tasks.length > 0">
+            <th scope="col">No.</th>
+            <th scope="col">Todo item</th>
+            <th scope="col">Status</th>
+            <th scope="col">Actions</th>
+          </tr>
+    </thead>
+    <tbody >
+        <tr style="font-family:'Oswald', sans-serif;" class="fw-bold" *ngFor="let task of tasks; let i = index">
+        <th scope="row">{{i+1}}</th>
+        <td>{{task}}</td>
+        <td class="text-danger">In progress</td>
+        <td>
+          <button  type="submit"  class="btn btn-danger" (click)="removetask(i)">Delete</button>
+          
+        </td>
+      </tr>
+      
+    </tbody>
+  </table>

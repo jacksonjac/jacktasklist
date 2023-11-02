@@ -1,0 +1,14 @@
+<form class="row row-cols-lg-auto g-3 justify-content-center align-items-center mb-4 pb-2" action="">
+    <div class="col-12">
+      <div class="form-outline">
+       
+        <input type="text" id="form1" class="form-control mt-2" [(ngModel)]="newtask" name="newtask" />
+        <label class="form-label text-light" for="form1">Enter a task here</label>
+      </div>
+    </div>
+    <div class="">
+      <button type="submit" class="btn btn-primary mb-4" (click)="addtask()">Save</button>
+    </div>
+
+   
+  </form>
